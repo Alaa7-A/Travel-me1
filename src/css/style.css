@@ -1,3 +1,6 @@
+body{
+    overflow-x: hidden;
+}
 nav.navbar ul.navbar-nav {
     padding-right: 0; 
 }
@@ -28,20 +31,22 @@ nav.navbar {
 }
 
 nav.navbar .navbar-brand img {
-    width: 130px;
-    height: 120px;
+    width: 100px;
+    height: 65px;
     margin-right: 10px;
 }
 
 
 nav.navbar button.navbar-toggler {
-    margin: 30px auto;
+    margin: -15px 0  !important;
     -webkit-transition: all 1s ease;
     transition: all 1s ease; 
-    color: #007bff;
+    color: #000000;
+    
 }
 nav.navbar button.navbar-toggler span {
    color: #007bff; 
+
 }
 
 .modal .modal-header .close:hover {
@@ -51,6 +56,12 @@ nav.navbar button.navbar-toggler span {
 .row .modal form input{
     text-align: right;
 }
+
+
+
+
+
+
 /*----------------قسم تعريف بالشركة-------------*/
 header {
     background-image: url(../images/travel.jpg);
@@ -75,7 +86,7 @@ header .overlay {
 }
 header .overlay p{
     color: #e9f0f1;
-    margin: 60px 250px ;
+    margin: 30px 250px ;
     font-size: 30px;
 }
 header h2{
@@ -192,10 +203,10 @@ section.licence ul.timeline:before {
 section.licence ul.timeline li {
     position: relative;
 }
-section.licence ul.timeline li .time-box.i{
+section.licence ul.timeline li .time-box.a{
     margin-top: 200px;
 }
-section.licence ul.timeline li .time-box.e{
+section.licence ul.timeline li .time-box.g{
     margin-top: -268px;
 }
 
@@ -290,6 +301,10 @@ section.services .card p a{
     padding: 8px 8px 8px;
     margin-right: 50px;
 }
+section.services .card p a:hover{
+    background-color: #006adb;
+    text-decoration: none;
+}
 
  section.services .card:hover .card-block p  {
     opacity: 1;
@@ -311,9 +326,10 @@ section.contacts .overlay {
     border-top-right-radius:20%;
     border-bottom-right-radius:20%;
     border-bottom-left-radius:20%;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 
 }
+
 
 section.contacts .overlay .contact-info .title h3 {
     font-size: 40px;
@@ -369,9 +385,9 @@ section.contacts .overlay .contact-info .form form button {
     margin-right: 15px;
 }
 section.contacts .overlay .contact-info .form form button:hover{
-    background-color: #ffffff;
-    color: #007bff;
-    border: 2px solid #007bff;
+    background-color: #156ece;
+    color: #ffffff;
+    border: 2px solid #156ece;
 }
 
 section.contacts .overlay .contact-info ul.contact-us li {
@@ -405,7 +421,7 @@ section.contacts .info h3 {
 }
 
 section.contacts .info ul {
-    padding: 0; 
+    padding: 0xp; 
 }
 
 section.contacts .info ul li {
@@ -430,5 +446,126 @@ footer .copyright p {
     color: #eceff5;
     margin-bottom: 0px;
 }
+
+@media (max-width: 767px) {
+    section.licence ul.timeline li .time-box {
+        max-width: 100%;   
+    }
+
+    section.licence ul.timeline li .time-box.g{
+        margin: -80px 0 0px;
+    }
+
+    section.licence ul.timeline li .time-box.a{
+        margin-top: -80px;
+    }
+
+    section.licence ul.timeline li:not(:first-of-type) {
+        margin-top: 20px;
+    }
+
+    section.licence ul.timeline li .time-box:after {
+        display: none;
+    }
+
+    section.licence ul.timeline:before {
+        height: 90%;
+    }
+    header .overlay p{
+        font-size: 25px;
+        margin: 15px 10px !important; 
+    }
+    header h2:before {
+        right:33% !important;
+        bottom: 72%;
+    }
+    section.licence ul.timeline li .time-box p{
+        font-size: 20px !important;
+    }
+}
+
+
+@media (max-width: 991px){
+    section.licence ul.timeline li .time-box p{
+        font-size: 15px;
+    }
+    section.services .card{
+        padding: 10px 10px 10px ;
+        height: 230px !important;
+    }
+    section.services .card:hover {
+        height: 320px !important;
+    }
+    section.services .card .card-block p{
+        font-size: 18px;
+    }
+    section.contacts .overlay{
+        height: 750px !important;
+    }
+    nav.navbar ul.navbar-nav li a.nav-link{
+        background-color: rgba(0, 0, 0, 0.753) !important;
+        margin: -4px 3px 1px !important;
+    }
+    nav.navbar .navbar-brand img{
+        margin-top: -12px ;
+    }
+
+}
+
+
+
+@media (max-width: 1200px){
+    header .overlay p{
+        margin: 10px 100px;
+    }
+    header h2:before {
+        right:37%;
+        bottom: 72%;
+    }
+    section.services .card{
+        padding: 10px 10px 10px !important;
+        height: 320px ;
+    }
+    section.services .card:hover {
+        height: 400px ;
+    }
+}
+
+@media (max-width: 767px){
+    section.services .card {
+        height: 370px !important; 
+        padding: 20px 20px 50px ;
+        margin-bottom: 20px;
+    }
+    section.services .card:hover {
+        height: 440px !important;
+    }
+}
+
+@media (max-width: 525px){
+    header h2:before {
+        right:25% !important;
+    }
+    section.services .card {
+        height: 315px !important; 
+        padding: 20px 20px 50px ;
+        margin-bottom: 20px;
+    }
+    section.services .card:hover {
+        height: 400px !important;
+    }
+}
+@media (max-width: 767px){
+    section.contacts .overlay{
+        height: 1020px !important;
+        border-bottom-right-radius:0%;
+        border-bottom-left-radius:0%;
+        margin-right: 10px;        
+    }
+    section.contacts .overlay .contact-info ul.contact-us li{
+        margin-top: 10px !important;
+    }
+}
+
 
 

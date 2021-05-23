@@ -13,6 +13,7 @@
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
     "@laylazi/bootstrap-rtl": "^4.6.0-1",
+    "@laylazi/bootstrap-rtl-scss": "^4.6.0-1",
     "css-loader": "^5.2.4",
     "expose-loader": "^2.0.0",
     "file-loader": "^6.2.0",
