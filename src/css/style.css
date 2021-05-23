@@ -56,7 +56,9 @@ nav.navbar button.navbar-toggler span {
 .row .modal form input{
     text-align: right;
 }
-
+.row .modal .modal-footer a:hover{
+    text-decoration: none;
+}
 
 
 
