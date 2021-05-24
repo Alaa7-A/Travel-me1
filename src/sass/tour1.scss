@@ -1,10 +1,8 @@
 @import './_variables.scss';
 @import './mixins.scss';
 
-
-
-header.tour1-top{
-    @include navbar ($backrond-tour1 , $color-dark);
+body.tour1{
+    @include tour1($backrond-tour1 , $color-dark);
 }
 
 .modal .modal-header #a{
@@ -53,24 +51,10 @@ nav.navbar button.navbar-toggler span #a{
 }
 
 
-
-
-section.tour1-body {
-  @include body ($backrond-tour1 , $color-dark)
-}
-
-section.slider {
-  @include carosele( $color-dark)
-}
-
-section.tour1 {
-    @include Communication ($backrond-tour1 , $color-dark)
-}
-
 footer.tour1{
     .copyright {
         background-color: #acac10; 
-        width: 100% ;
+        width: 100% !important;
         
         p {
             font-size: 15px;
@@ -83,9 +67,9 @@ footer.tour1{
 } 
 @media (max-width: 767px){
     section.tour1 {
-        border-bottom-right-radius:0%;
-        border-bottom-left-radius:0%;
-        margin-right: 10px; 
+        border-bottom-right-radius:0% !important;
+        border-bottom-left-radius:0% !important;
+        margin-right: 10px !important; 
        
     }
     section.tour1 .overlay .contact-info ul.contact-us li{
@@ -187,12 +171,12 @@ footer.tour1{
     section.tour1-body{
         margin: 10px 20px 30px !important;
         height: 400px;
-        border-top-left-radius:20%;
-        border-bottom-right-radius:20%;
+        border-top-left-radius:20% !important;
+        border-bottom-right-radius:20% !important;
 
         p{
-            margin: 30px 30px 10px;
-            font-size: 20px;
+            margin: 30px 30px 10px !important;
+            font-size: 20px !important;
         }
         h2{
             &::before{

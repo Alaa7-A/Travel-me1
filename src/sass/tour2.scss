@@ -1,9 +1,8 @@
 @import './variables.scss';
 @import './mixins.scss';
 
-header.tour2-top{
-    
-    @include navbar2 ($backrond-tour2 , $color-dark2 )  ;
+body.tour2{
+    @include tour2($backrond-tour2 , $color-dark2);
 }
 
 .modal .modal-header #b{
@@ -52,44 +51,6 @@ nav.navbar button.navbar-toggler span #a{
     color: black !important;
 }
 
-
-section.tour2-body {
-    position: relative;
-    margin: 30px 90px 30px;
-    background: #ecb98e;
-    height: 800px;
-    border-top-left-radius:30%;
-    border-bottom-right-radius:30%;
-    
-    p{
-        color: #353432;
-        margin: 60px 130px ;
-        font-size: 23px;
-    }
-    h2{
-        margin-top: 80px;
-        color: #332418; 
-
-        &::before{
-            content: "";
-            position: absolute;
-            right:30%;
-            bottom: 81%;
-            width: 460px;
-            height: 2px;
-            background-color: #ff7300;
-        }
-    }
-}
-
-section.slider2 {
-    @include carosele( $color-dark2)
-}
-
-section.tour2 {
-    @include Communication2 ($backrond-tour2 , $color-dark2)
-}
-
 footer.tour2{
     .copyright {
         background-color: #ff7300; 
@@ -107,9 +68,9 @@ footer.tour2{
 
 @media (max-width: 767px){
     section.tour2 {
-        border-bottom-right-radius:0%;
-        border-bottom-left-radius:0%;
-        margin-right: 10px; 
+        border-bottom-right-radius:0% !important ;
+        border-bottom-left-radius:0% !important;
+        margin-right: 10px  !important; 
        
     }
     section.tour2 .overlay .contact-info ul.contact-us li{
@@ -135,8 +96,8 @@ footer.tour2{
     section.tour2-body{
         margin: 10px 30px 10px;
         height: 600px;
-        border-top-left-radius:20%;
-        border-bottom-right-radius:20%;
+        border-top-left-radius:20% !important;
+        border-bottom-right-radius:20% !important;
 
         p{
             margin: 30px 50px ;
